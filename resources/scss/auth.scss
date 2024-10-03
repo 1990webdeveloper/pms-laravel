@@ -1,0 +1,91 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #5f63f2;
+}
+
+* {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+}
+
+.auth-wrapper {
+    overflow: hidden;
+
+    .auth-full-bg {
+        background-color: #dce3f9;
+        position: relative;
+        .bg-overlay {
+            inset: 0;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            background-image: url(../../public/assets/images/bg-auth-overlay.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+        }
+    }
+
+    .auth-full-page-content {
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .form-check {
+        cursor: pointer;
+    }
+    .form-group {
+        margin-bottom: 24px;
+        input {
+            height: 46px;
+        }
+    }
+    .auth-logo {
+        img {
+            width: 220px;
+        }
+    }
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+input {
+    box-shadow: none !important;
+    border-radius: 0.25rem !important;
+    &:focus {
+        border-color: #ced4da !important;
+    }
+}
+
+.mover {
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    z-index: 99;
+    color: #666464;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,65 @@
+@import "./auth.scss";
+@import "./style.scss";
+@import "../../public/assets/css/select2-bootstrap-5-theme.min.scss";
+@import "../../public/assets/css/choices.min.css";
+
+:root,
+:root.light {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #5f63f2;
+    --blue-light: #dfe0fc;
+    --bs-body-color: #495057;
+    --bs-link-color: var(--bs-gray-600);
+    --bs-emphasis-color: var(--blue) !important;
+    --bs-link-hover-color: var(--blue);
+    --dark-500: #9299b8;
+    --bs-dropdown-link-active-bg: var(--blue) !important;
+    --bg-body: #f8f8fb;
+    --thead-bg:#f8f8fb;
+    --search-form-bg:#f3f3f9;
+    --bg-white:#ffffff;
+    --green: #2ecd6f;
+    --orange:#ffc107;
+    --purple: #730ca3;
+}
+
+.dark { 
+    --white: #2a3042;
+    --text-color: #fff;               
+    --card-color: #181818;
+    --bg-body: #222736;     
+    --bs-border-color: #32394e;
+    --thead-bg:var(--bg-body);
+    --bs-body-color: #d7d7d7;
+    --blue-light: #202126;
+    --search-form-bg:var(--bg-body);
+    --bg-white:var(--bg-body);
+    --bs-secondary-color:#59595c;
+    --bs-modal-bg:var(--bg-body);
+    
+}
+
+.light-dark-mode {
+    .toggle-container {
+        position: relative;
+    }
+}
+.theme-btn.light {
+    display: none;
+}
+
+.dark {
+    .theme-btn.dark {
+        display: none;
+    }
+    .theme-btn.light {
+        display: block;
+    }
+    .form-label {
+        color: inherit;
+    }
+}
+.modal{
+    --bs-modal-header-padding: 0.5rem 1rem;
+}
